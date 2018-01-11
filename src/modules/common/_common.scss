@@ -1,0 +1,62 @@
+@import '../../var';
+
+.common-element {
+  &.button {
+    display: inline-block;
+    &.clicked {
+      button, button:hover {
+        background-color: $lightBlue;
+        border-color: $blue;
+      }
+    }
+    button {
+      color: black;
+      background-color: white;
+      border-width: 1px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 3px;
+      min-width: 150px;
+      padding: 4px 10px 4px 10px;
+      outline: none;
+      &:hover {
+        background-color: $faintBlue;
+        border-color: $blue;
+      }
+      &:active {
+        background-color: $lightBlue;
+        border-color: $blue;
+      }
+    }
+  }
+
+  &.tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: $blue;
+    padding: 4px 20px 3px 20px;
+    text-align: center;
+    margin-right: 12px;
+    line-height: 20px;
+    &.red {
+      background-color: $red;
+    }
+    &.green {
+      background-color: $green;
+    }
+    &.grey {
+      background-color: $grey;
+    }
+    &.pink {
+      background-color: $pink;
+    }
+    &.yellow {
+      background-color: $yellow;
+    }
+    &.lightBlue {
+      background-color: $lightBlue;
+    }
+  }
+}
